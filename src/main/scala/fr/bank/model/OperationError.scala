@@ -1,4 +1,4 @@
-package fr.bank
+package fr.bank.model
 
 /***
   * the different operation errors
@@ -12,5 +12,7 @@ object OperationError {
   class AccountNotFoundError(code: Int, details: String) extends OperationError
 
   class InvalidAmount(code: Int, details: String) extends OperationError
+
+  class UnknownOperationError(code: Int, details: String) extends OperationError
 
 }
